@@ -1,0 +1,32 @@
+
+<table border='1'>
+  <thead>
+    <tr>
+      <th>Id</th>
+      <th>Title</th>
+      <th>Author</th>
+      <th>Published Year</th>
+      <th>Action</th>
+      <th>Delete</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let book of books">
+      <td>{{ book.id}}</td>
+      <td>{{ book.title }}</td>
+      <td>{{ book.author }}</td>
+      <td>{{ book.publishedYear }}</td>
+      <td><button class="btn">Edit</button></td>
+      <td><button class="btn">Delete</button></td>
+    </tr>
+  </tbody>
+</table>
+<button (click)="logout()" >Logout</button>
+<!-- HTML !-->
+<!-- <button  role="button">Button 24</button> -->
+
+
+<!-- HTML !-->
+<!-- <button class="btn" role="button">Button 29</button>
+
+/* CSS */ -->
