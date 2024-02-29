@@ -6,7 +6,7 @@ import { Injectable } from '@angular/core';
 })
 export class AuthService {
   private isAuthenticated: boolean = false;
-
+  
   login(username: string, password: string): boolean {
     // In a real application, validate credentials against a server or database.
     if (username === 'user' && password === 'password') {

@@ -1,3 +1,4 @@
+
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
@@ -7,6 +8,10 @@ import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { BooksComponent } from './books/books.component';
+
+import { environment } from 'src/environments/environment';
+import { AngularFireModule} from '@angular/fire/compat';
+
 
 @NgModule({
   declarations: [
@@ -19,6 +24,7 @@ import { BooksComponent } from './books/books.component';
     BrowserModule,
     AppRoutingModule,
     ReactiveFormsModule,
+    AngularFireModule.initializeApp(environment.firebaseConfig),
 
   ],
   providers: [],
