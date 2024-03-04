@@ -1,0 +1,31 @@
+
+<table border='1'>
+    <thead>
+      <tr>
+        <th>Id</th>
+        <th>Title</th>
+        <th>Author</th>
+        <th>Published Year</th>
+      
+      </tr>
+    </thead>
+    <tbody>
+      <!-- <tr *ngFor="let book of books,let i =index">
+        <td>{{ book.id}}</td>
+        <td>{{ book.title }}</td>
+        <td>{{ book.author }}</td>
+        <td>{{ book.publishedYear }}</td>
+        <td><button class="btn">Edit</button></td>
+        <td><button class="btn" (click)="deleteBook(book.id,i)">Delete</button></td>
+      </tr> -->
+  
+      <tr *ngFor="let book of bookData,let i =index">
+        <td>{{ book.id}}</td>
+        <td>{{ book.title }}</td>
+        <td>{{ book.author }}</td>
+        <td>{{ book.publishedyear }}</td>
+     
+      </tr>
+    </tbody>
+  </table>
+ 
